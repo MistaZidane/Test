@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<!-- <div style="padding: 20px 20px; position: relative;">Hire Me<a href="#"></a></div>
+<style type="text/css">
+	header {
+    height: auto;
+     
+}
+</style> -->
+<style type="text/css">
+	a{
+		text-decoration: none;
+        color: teal;
+        font-size: 20px;
+		font-weight: bold;
+		font-family: sans-serif;
+	}
+	.hire{
+		color: blue;
+		letter-spacing: 2px;;
+	}
+	
+</style>
+<header>
+	<di style="padding: 20px 20px; display:flex;"> <a  target="_blank" href="www.bproo.com"><span class="hire">Hire Me</span> <span class="mainAnimation"></span> </a></div>
+  </header>
+</body>
+<script type="text/javascript">
+	// array of subjets
+	let subject=['For Javascript','For Angular',"For PHP","For SEO",'For Wordpress','Web Designing','Jomla','For project Management'];
+	let num=0;
+	// the selector
+	let mainAnimation=document.querySelector(".mainAnimation");
+	mainAnimation.innerHTML=subject[0];
+	// initialising timer
+    setInterval(function (argument) {
+    	if(num==subject.length)num=0;
+    	mainAnimation.innerHTML=`  ${subject[num]}`;
+    	//increament the num to get array values
+        num+=1;
+    },2000);
+   
+</script>
+</html>
